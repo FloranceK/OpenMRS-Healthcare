@@ -42,10 +42,11 @@ public class PatientPageTestClass extends BaseClass {
 		cv = new CaptureVitalsPageClass(driver);
 		cv.enterVitalDetails();
 		pp.clickOnShowDetailsLink();
-		System.out.println(cv.getTextOfWeight());
-		System.out.println(cv.getTextOfTemp());
-		System.out.println(cv.getTextOfPulse());
-		System.out.println(cv.getTextOfResiratoryRate());
+		
+//		System.out.println(cv.getTextOfWeight());
+//		System.out.println(cv.getTextOfTemp());
+//		System.out.println(cv.getTextOfPulse());
+//		System.out.println(cv.getTextOfResiratoryRate());
 
 		String actualResult = cv.getTextOfHeight()
 				.concat(cv.getTextOfWeight()

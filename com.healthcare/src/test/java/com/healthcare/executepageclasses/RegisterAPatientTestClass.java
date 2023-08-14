@@ -61,7 +61,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 		pp = new PatientPageClass(driver);
 		pp.clickOnDeleteAPatient("no");
 		fp = new FindAPatientPageClass(driver);
-		Boolean actualResult = fp.isPatientNameDisplayed(gName.concat(fName));
+		Boolean actualResult = fp.isPatientNameDisplayed(gName.concat(" ".concat(fName)));
 		System.out.println(gName.concat(fName));
 		Assert.assertFalse(actualResult);
 		

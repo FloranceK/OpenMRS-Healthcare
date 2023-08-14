@@ -98,30 +98,37 @@ public class CaptureVitalsPageClass {
 	}
 
 	public String getTextOfWeight() {
+		generalUtilities.scrollToAnElement(driver, weightDisplayed);
 		return generalUtilities.getTextOfAnElement(weightDisplayed);
 	}
 
 	public String getTextOfTemp() {
+		generalUtilities.scrollToAnElement(driver, tempDisplayed);
 		return generalUtilities.getTextOfAnElement(tempDisplayed);
 	}
 
 	public String getTextOfPulse() {
+		generalUtilities.scrollToAnElement(driver, pulseDisplayed);
 		return generalUtilities.getTextOfAnElement(pulseDisplayed);
 	}
 
 	public String getTextOfResiratoryRate() {
+		generalUtilities.scrollToAnElement(driver, respiratoryRateDisplayed);
 		return generalUtilities.getTextOfAnElement(respiratoryRateDisplayed);
 	}
 
 	public String getTextOfSystolicBP() {
+		generalUtilities.scrollToAnElement(driver, systolicBPDisplayed);
 		return generalUtilities.getTextOfAnElement(systolicBPDisplayed);
 	}
 
 	public String getTextOfDiastolicBP() {
+		generalUtilities.scrollToAnElement(driver, DiastolicBPDisplayed);
 		return generalUtilities.getTextOfAnElement(DiastolicBPDisplayed);
 	}
 
 	public String getTextOfOximeterReading() {
+		generalUtilities.scrollToAnElement(driver, oximeterReadingDisplayed);
 		return generalUtilities.getTextOfAnElement(oximeterReadingDisplayed);
 	}
 
