@@ -40,13 +40,10 @@ public class PatientPageTestClass extends BaseClass {
 		pp.clickOnStartAVisitConfirmButton();
 		pp.clickOnCaptureVitalsLink();
 		cv = new CaptureVitalsPageClass(driver);
-		cv.enterVitalDetails();
+		cv.enterVitalDetails(rp.readIntegerData(20, 1), rp.readIntegerData(21, 1), rp.readIntegerData(22, 1),
+				rp.readIntegerData(23, 1), rp.readIntegerData(24, 1), rp.readIntegerData(25, 1),
+				rp.readIntegerData(26, 1), rp.readIntegerData(27, 1));
 		pp.clickOnShowDetailsLink();
-		
-//		System.out.println(cv.getTextOfWeight());
-//		System.out.println(cv.getTextOfTemp());
-//		System.out.println(cv.getTextOfPulse());
-//		System.out.println(cv.getTextOfResiratoryRate());
 
 		String actualResult = cv.getTextOfHeight()
 				.concat(cv.getTextOfWeight()

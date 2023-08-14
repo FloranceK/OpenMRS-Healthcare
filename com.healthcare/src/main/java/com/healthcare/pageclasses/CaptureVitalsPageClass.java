@@ -71,29 +71,30 @@ public class CaptureVitalsPageClass {
 	@FindBy(xpath = "//*[text()='95 %']")
 	WebElement oximeterReadingDisplayed;
 
-	public void enterVitalDetails() {
-		generalUtilities.typeToAnElement(height, "168");
+	public void enterVitalDetails(String hei, String wei, String temp, String puls, String resrate, String sysBP,
+			String diaBP, String oximeter) {
+		generalUtilities.typeToAnElement(height, hei);
 		generalUtilities.clickOnElement(nextButton);
-		generalUtilities.typeToAnElement(weight, "60");
+		generalUtilities.typeToAnElement(weight, wei);
 		generalUtilities.clickOnElement(nextButton);
 		generalUtilities.clickOnElement(nextButton);
-		generalUtilities.typeToAnElement(temperature, "40");
+		generalUtilities.typeToAnElement(temperature, temp);
 		generalUtilities.clickOnElement(nextButton);
-		generalUtilities.typeToAnElement(pulse, "40");
+		generalUtilities.typeToAnElement(pulse, puls);
 		generalUtilities.clickOnElement(nextButton);
-		generalUtilities.typeToAnElement(respiratoryRate, "12");
+		generalUtilities.typeToAnElement(respiratoryRate, resrate);
 		generalUtilities.clickOnElement(nextButton);
-		generalUtilities.typeToAnElement(bp1, "120");
-		generalUtilities.typeToAnElement(bp2, "80");
+		generalUtilities.typeToAnElement(bp1, sysBP);
+		generalUtilities.typeToAnElement(bp2, diaBP);
 		generalUtilities.clickOnElement(nextButton);
-		generalUtilities.typeToAnElement(pulseOximeterValue, "95");
+		generalUtilities.typeToAnElement(pulseOximeterValue, oximeter);
 		generalUtilities.clickOnElement(nextButton);
 		generalUtilities.clickOnElement(saveButton);
 
 	}
 
 	public String getTextOfHeight() {
-		
+
 		return generalUtilities.getTextOfAnElement(heightDisplayed);
 	}
 

@@ -10,12 +10,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.ExplicitWaitClass;
 import utilities.GeneralUtilities;
 
 public class PatientPageClass {
 
 	WebDriver driver;
 	GeneralUtilities generalUtilities = new GeneralUtilities();
+	ExplicitWaitClass explicitWait = new ExplicitWaitClass();
 
 	public PatientPageClass(WebDriver driver) {
 		this.driver = driver;
@@ -66,14 +68,8 @@ public class PatientPageClass {
 	}
 
 	public void clickOnHomeButton() {
-		try {
-
-			generalUtilities.clickOnElement(homeButton);
-		} catch (StaleElementReferenceException e) {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-			wait.until(ExpectedConditions.visibilityOf(homeButton));
-			generalUtilities.clickOnElement(homeButton);
-		}
+		explicitWait.elementToBeClickableWait(driver, homeButton);
+		generalUtilities.clickOnElement(homeButton);
 	}
 
 	public void clickOnStartVisitLink() {
@@ -81,6 +77,7 @@ public class PatientPageClass {
 	}
 
 	public void clickOnStartAVisitConfirmButton() {
+		explicitWait.elementToBeClickableWait(driver, startAVisitConfirmButton);
 		generalUtilities.clickOnElement(startAVisitConfirmButton);
 	}
 
