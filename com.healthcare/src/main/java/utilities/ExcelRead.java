@@ -15,7 +15,7 @@ public class ExcelRead {
 	static XSSFSheet sh;
 	
 	public static String getStringData(int a, int b) throws IOException {
-		f = new FileInputStream("/Users/smathew/eclipse-workspace/OpenMRS-Healthcare/com.healthcare/src/test/resources/excel.xlsx");  //set file path
+		f = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/excel.xlsx");  //set file path
 		w = new XSSFWorkbook(f);  // excel is in a workbook and getting excel from workbook
 		sh = w.getSheet("sheet1");  // getting sheet
 		Row r = sh.getRow(a);  
@@ -24,7 +24,7 @@ public class ExcelRead {
 		
 	}
 	public static String getIntegerData(int a, int b) throws IOException {
-		f = new FileInputStream("/Users/smathew/eclipse-workspace/OpenMRS-Healthcare/com.healthcare/src/test/resources/excel.xlsx");
+		f = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/excel.xlsx");
 		w = new XSSFWorkbook(f);
 		sh = w.getSheet("sheet1");
 		Row r = sh.getRow(a);

@@ -10,11 +10,12 @@ import com.healthcare.pageclasses.HomePageClass;
 import com.healthcare.pageclasses.LoginPageClass;
 import com.healthcare.pageclasses.RegisterAPatientPageClass;
 
+import utilities.ExcelRead;
+
 public class LoginPageTestClass extends BaseClass {
 
-	LoginPageClass loginPageClass;
-	HomePageClass homePageClass;
-	RegisterAPatientPageClass rp;
+	private LoginPageClass loginPageClass;
+	private HomePageClass homePageClass;
 
 	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp")
 	public void verifySuccessfulLogin(String uname, String password) {
@@ -34,20 +35,15 @@ public class LoginPageTestClass extends BaseClass {
 		String actualResult = loginPageClass.getUnsuccessfulLoginMessageForRegDesk();
 		String expectedResult = "Invalid username/password. Please try again.";
 		Assert.assertEquals(actualResult, expectedResult, "Actual and expcted outcomes are not same");
-
 	}
 
-	
 	@Test
 	public void verifyTheCorrectSiteIsLoadedWhileHittingTheURL() throws IOException {
 		loginPageClass = new LoginPageClass(driver);
 		String actualResult = loginPageClass.getURLOfLoginPage();
-		rp = new RegisterAPatientPageClass(driver);
-		String expectedResult = rp.readStringData(19, 1);
+		String expectedResult = ExcelRead.getStringData(19, 1);
 		Assert.assertEquals(actualResult, expectedResult);
 
 	}
-	
-	
 
 }
