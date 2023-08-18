@@ -33,7 +33,6 @@ public class BaseClass {
 	public void beforeMethod() throws IOException {
 		readProperty();
 		WebDriverManager.chromedriver().setup();
-		System.setProperty("webdriver.chrome.driver", "/Users/smathew/Downloads/chromedriver-mac-arm64/chromedriver");
 		driver = new ChromeDriver();
 
 		driver.get(property.getProperty("url"));  // to retrieve the url mentioned from config.properies file.
