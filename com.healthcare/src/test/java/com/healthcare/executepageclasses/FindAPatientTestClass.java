@@ -1,5 +1,7 @@
 package com.healthcare.executepageclasses;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 
 import org.testng.Assert;

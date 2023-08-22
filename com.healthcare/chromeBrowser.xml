@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteforChrome">
+	<test thread-count="5" name="ChromeTest">
+		<parameter name="browser" value="safari"></parameter>
+		<classes>
+			<class name="com.healthcare.executepageclasses.HomePageTestClass" />
+		<!-- 	<class
+				name="com.healthcare.executepageclasses.CaptureVitalsTestClass" />
+			<class
+				name="com.healthcare.executepageclasses.FindAPatientTestClass" />
+			<class
+				name="com.healthcare.executepageclasses.RegisterAPatientTestClass" />
+			<class name="com.healthcare.executepageclasses.LoginPageTestClass" />
+			<class
+				name="com.healthcare.executepageclasses.ActiveVisitsTestClass" />  -->
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+SuiteforChrome -->

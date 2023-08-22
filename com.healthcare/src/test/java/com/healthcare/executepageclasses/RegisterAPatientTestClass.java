@@ -1,5 +1,9 @@
 package com.healthcare.executepageclasses;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -19,7 +23,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 	PatientPageClass pp;
 	FindAPatientPageClass fp;
 
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp")
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", priority = 0)
 	public void verifyToRegisterAPatient(String uname, String password) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.loginAsRegistrationDesk(uname, password);
@@ -37,11 +41,11 @@ public class RegisterAPatientTestClass extends BaseClass {
 		pp = new PatientPageClass(driver);
 		String actualResult = pp.getGivenName();
 		String expectedResult = rp.readStringData(5, 2);
-		Assert.assertEquals(actualResult, expectedResult);
+		AssertJUnit.assertEquals(actualResult, expectedResult);
 
 	}
 
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp")
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", priority = 1)
 	public void verifyToDeleteARegisteredPatient(String uname, String password) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.loginAsRegistrationDesk(uname, password);
@@ -67,7 +71,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 		
 	}
 	
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp")
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", priority = 2)
 	public void verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(String uname, String password) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.loginAsRegistrationDesk(uname, password);

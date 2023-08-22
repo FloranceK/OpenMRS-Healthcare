@@ -1,5 +1,9 @@
 package com.healthcare.executepageclasses;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -52,7 +56,6 @@ public class CaptureVitalsTestClass extends BaseClass {
 										.concat(cv.getTextOfDiastolicBP().concat(cv.getTextOfOximeterReading())))))));
 		System.out.println(actualResult);
 		String expectedResult = "168.0 cm60.0 kg40.0 DEG C40 beats/min12120 mmHg80 mmHg95 %";
-		Assert.assertEquals(actualResult, expectedResult);
-
+		AssertJUnit.assertEquals(actualResult, expectedResult);
 	}
 }

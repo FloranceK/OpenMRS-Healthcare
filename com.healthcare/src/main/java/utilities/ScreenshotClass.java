@@ -10,6 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
+
 public class ScreenshotClass {
 
 	public void takeScreenshot(WebDriver driver, String name) throws IOException {
