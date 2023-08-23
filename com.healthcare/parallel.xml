@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	
+  <test thread-count="2" name="Test1">
+	  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+    <class name="com.healthcare.executepageclasses.LoginPageTestClass"/>
+      
+      
+    </classes>
+  </test> <!-- Test1 -->
+  
+  <test thread-count="2" name="Test2">
+	  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+         <class name="com.healthcare.executepageclasses.HomePageTestClass"/>
+      
+    </classes>
+  </test> <!-- Test2 -->
+  
+</suite> <!-- Suite -->
+
+<!-- 
+<class name="com.healthcare.executepageclasses.HomePageTestClass"/>
+      <class name="com.healthcare.executepageclasses.CaptureVitalsTestClass"/>
+      <class name="com.healthcare.executepageclasses.FindAPatientTestClass"/>
+      <class name="com.healthcare.executepageclasses.RegisterAPatientTestClass"/>
+      <class name="com.healthcare.executepageclasses.ActiveVisitsTestClass"/>
+      <class name="com.healthcare.executepageclasses.LoginPageTestClass"/>
+      -->
