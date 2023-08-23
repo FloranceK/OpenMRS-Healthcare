@@ -45,7 +45,7 @@ public class HomePageClass {
 	}
 	public Boolean isAllTilesDisplayed() {
 		for (WebElement element : allTiles) {
-			generalUtilities.elementIsDisplayed(element);
+			generalUtilities.elementIsDisplayed(element); 
 			return true;
 		}
 		return false;

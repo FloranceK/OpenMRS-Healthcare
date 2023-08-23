@@ -2,6 +2,8 @@ package com.healthcare.executepageclasses;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -12,8 +14,9 @@ import com.healthcare.pageclasses.HomePageClass;
 import com.healthcare.pageclasses.LoginPageClass;
 import com.healthcare.pageclasses.PatientPageClass;
 import com.healthcare.pageclasses.RegisterAPatientPageClass;
+import com.healthcare.retry.RetryAnalyzer;
 
-public class FindAPatientTestClass extends BaseClass {
+public class FindAPatientTestClass extends BaseClass { 
 	
 	LoginPageClass lp;
 	HomePageClass hp;
@@ -21,7 +24,7 @@ public class FindAPatientTestClass extends BaseClass {
 	PatientPageClass pp;
 	FindAPatientPageClass fp;
 	
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp")
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp",retryAnalyzer = RetryAnalyzer.class,groups = {"group2"})
 	public void verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(String uname, String password) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.loginAsRegistrationDesk(uname, password);

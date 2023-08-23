@@ -1,17 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-14T10:11:19 AEST" name="Default suite" finished-at="2023-08-14T10:11:41 AEST" duration-ms="22579">
+  <suite started-at="2023-08-22T21:12:52 AEST" name="Suite" finished-at="2023-08-22T21:13:13 AEST" duration-ms="21078">
     <groups>
+      <group name="group1">
+        <method signature="HomePageTestClass.verifyTheLogoIsDisplayedOrNotInHomePage(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.HomePageTestClass@1972e513]" name="verifyTheLogoIsDisplayedOrNotInHomePage" class="com.healthcare.executepageclasses.HomePageTestClass"/>
+      </group> <!-- group1 -->
     </groups>
-    <test started-at="2023-08-14T10:11:19 AEST" name="Default test" finished-at="2023-08-14T10:11:41 AEST" duration-ms="22579">
-      <class name="com.healthcare.executepageclasses.PatientPageTestClass">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.healthcare.executepageclasses.PatientPageTestClass@353352b6]" started-at="2023-08-14T10:11:19 AEST" name="beforeMethod" finished-at="2023-08-14T10:11:24 AEST" duration-ms="4960" status="PASS">
+    <test started-at="2023-08-22T21:12:52 AEST" name="Test1" finished-at="2023-08-22T21:12:59 AEST" duration-ms="7323">
+      <class name="com.healthcare.executepageclasses.HomePageTestClass">
+        <test-method signature="verifyAllTilesAreDisplayedInHomePage(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.HomePageTestClass@1972e513]" started-at="2023-08-22T21:12:52 AEST" name="verifyAllTilesAreDisplayedInHomePage" data-provider="dp" finished-at="2023-08-22T21:12:52 AEST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
+at utilities.ExcelRead.getStringData(ExcelRead.java:19)
+at com.healthcare.executepageclasses.DataProviderLogin.dp(DataProviderLogin.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 19 more
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0X68736B72
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllTilesAreDisplayedInHomePage -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.HomePageTestClass@1972e513]" started-at="2023-08-22T21:12:53 AEST" name="beforeMethod" finished-at="2023-08-22T21:12:58 AEST" duration-ms="5075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyAllAddVitalDetailsOfRegisteredPatient(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.PatientPageTestClass@353352b6]" started-at="2023-08-14T10:11:24 AEST" name="verifyAllAddVitalDetailsOfRegisteredPatient" data-provider="dp" finished-at="2023-08-14T10:11:41 AEST" duration-ms="17256" status="PASS">
+        <test-method signature="verifyTheLogoIsDisplayedOrNotInHomePage(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.HomePageTestClass@1972e513]" started-at="2023-08-22T21:12:58 AEST" name="verifyTheLogoIsDisplayedOrNotInHomePage" data-provider="dp" finished-at="2023-08-22T21:12:59 AEST" duration-ms="1724" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,12 +91,131 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAllAddVitalDetailsOfRegisteredPatient -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.healthcare.executepageclasses.PatientPageTestClass@353352b6]" started-at="2023-08-14T10:11:41 AEST" name="afterMethod" finished-at="2023-08-14T10:11:41 AEST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyTheLogoIsDisplayedOrNotInHomePage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executepageclasses.HomePageTestClass@1972e513]" started-at="2023-08-22T21:12:59 AEST" name="afterMethod" finished-at="2023-08-22T21:12:59 AEST" duration-ms="110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheLogoIsDisplayedOrNotInHomePage status=SUCCESS method=HomePageTestClass.verifyTheLogoIsDisplayedOrNotInHomePage(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.HomePageTestClass@1972e513] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.healthcare.executepageclasses.PatientPageTestClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.healthcare.executepageclasses.HomePageTestClass -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-08-22T21:12:52 AEST" name="Test2" finished-at="2023-08-22T21:13:13 AEST" duration-ms="21078">
+      <class name="com.healthcare.executepageclasses.ActiveVisitsTestClass">
+        <test-method is-config="true" signature="createExtendReport(org.testng.ITestContext)[pri:0, instance:com.healthcare.executepageclasses.ActiveVisitsTestClass@4b520ea8]" started-at="2023-08-22T21:12:52 AEST" name="createExtendReport" finished-at="2023-08-22T21:12:52 AEST" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4bc28c33]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtendReport -->
+        <test-method signature="verifyThePatientIsInActiveVisitsWhenVisitStarts(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.ActiveVisitsTestClass@4b520ea8]" started-at="2023-08-22T21:12:52 AEST" name="verifyThePatientIsInActiveVisitsWhenVisitStarts" data-provider="dp" finished-at="2023-08-22T21:12:52 AEST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.IOException: Stream Closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.IOException: Stream Closed
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: Stream Closed
+at java.base/java.io.FileInputStream.available0(Native Method)
+at java.base/java.io.FileInputStream.available(FileInputStream.java:330)
+at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:359)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:183)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.realSkip(ZipArchiveInputStream.java:1194)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.skipRemainderOfArchive(ZipArchiveInputStream.java:1126)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:293)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
+at utilities.ExcelRead.getStringData(ExcelRead.java:19)
+at com.healthcare.executepageclasses.DataProviderLogin.dp(DataProviderLogin.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 19 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePatientIsInActiveVisitsWhenVisitStarts -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.ActiveVisitsTestClass@4b520ea8]" started-at="2023-08-22T21:12:53 AEST" name="beforeMethod" finished-at="2023-08-22T21:12:59 AEST" duration-ms="6385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.ActiveVisitsTestClass@4b520ea8]" started-at="2023-08-22T21:12:59 AEST" name="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted" data-provider="dp" finished-at="2023-08-22T21:13:13 AEST" duration-ms="13859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.healthcare.executepageclasses.ActiveVisitsTestClass@4b520ea8]" started-at="2023-08-22T21:13:13 AEST" name="afterMethod" finished-at="2023-08-22T21:13:13 AEST" duration-ms="424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted status=SUCCESS method=ActiveVisitsTestClass.verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(java.lang.String,java.lang.String)[pri:0, instance:com.healthcare.executepageclasses.ActiveVisitsTestClass@4b520ea8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.healthcare.executepageclasses.ActiveVisitsTestClass -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>

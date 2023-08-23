@@ -36,7 +36,7 @@ public class BaseClass {
 	}
 
 	@Parameters("browser")
-	@BeforeMethod
+	@BeforeMethod(groups = {"launch"})
 	public void beforeMethod(String browserValue) throws IOException {
 		readProperty();
 		if (browserValue.equalsIgnoreCase("chrome")) {
@@ -56,7 +56,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
-	@AfterMethod()
+	@AfterMethod(groups = {"close"})
 	public void afterMethod(ITestResult itr) throws IOException {
 		// ITestResult describes the result of a test
 

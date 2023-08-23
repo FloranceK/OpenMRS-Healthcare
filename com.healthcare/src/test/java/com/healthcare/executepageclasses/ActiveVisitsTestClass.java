@@ -2,6 +2,8 @@ package com.healthcare.executepageclasses;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -12,6 +14,7 @@ import com.healthcare.pageclasses.HomePageClass;
 import com.healthcare.pageclasses.LoginPageClass;
 import com.healthcare.pageclasses.PatientPageClass;
 import com.healthcare.pageclasses.RegisterAPatientPageClass;
+import com.healthcare.retry.RetryAnalyzer;
 
 public class ActiveVisitsTestClass extends BaseClass {
 
@@ -21,7 +24,7 @@ public class ActiveVisitsTestClass extends BaseClass {
 	PatientPageClass pp;
 	ActiveVisitsPageClass av;
 
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp")
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", retryAnalyzer = RetryAnalyzer.class)
 	public void verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(String uname, String password)
 			throws IOException {
 		lp = new LoginPageClass(driver);
@@ -46,7 +49,7 @@ public class ActiveVisitsTestClass extends BaseClass {
 
 	}
 
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp")
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp",retryAnalyzer = RetryAnalyzer.class)
 	public void verifyThePatientIsInActiveVisitsWhenVisitStarts(String uname, String password) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.loginAsRegistrationDesk(uname, password);

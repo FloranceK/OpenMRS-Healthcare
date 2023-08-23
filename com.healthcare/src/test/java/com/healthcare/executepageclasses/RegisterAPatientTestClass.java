@@ -4,6 +4,10 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -14,6 +18,7 @@ import com.healthcare.pageclasses.HomePageClass;
 import com.healthcare.pageclasses.LoginPageClass;
 import com.healthcare.pageclasses.PatientPageClass;
 import com.healthcare.pageclasses.RegisterAPatientPageClass;
+import com.healthcare.retry.RetryAnalyzer;
 
 public class RegisterAPatientTestClass extends BaseClass {
 
@@ -23,7 +28,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 	PatientPageClass pp;
 	FindAPatientPageClass fp;
 
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", priority = 0)
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", priority = 0,retryAnalyzer = RetryAnalyzer.class)
 	public void verifyToRegisterAPatient(String uname, String password) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.loginAsRegistrationDesk(uname, password);
@@ -45,7 +50,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 
 	}
 
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", priority = 1)
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", priority = 1,retryAnalyzer = RetryAnalyzer.class)
 	public void verifyToDeleteARegisteredPatient(String uname, String password) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.loginAsRegistrationDesk(uname, password);
@@ -71,7 +76,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 		
 	}
 	
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", priority = 2)
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp", priority = 2,retryAnalyzer = RetryAnalyzer.class)
 	public void verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(String uname, String password) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.loginAsRegistrationDesk(uname, password);

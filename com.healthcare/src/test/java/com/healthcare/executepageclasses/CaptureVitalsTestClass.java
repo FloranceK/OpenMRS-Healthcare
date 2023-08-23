@@ -4,6 +4,10 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -14,6 +18,7 @@ import com.healthcare.pageclasses.HomePageClass;
 import com.healthcare.pageclasses.LoginPageClass;
 import com.healthcare.pageclasses.PatientPageClass;
 import com.healthcare.pageclasses.RegisterAPatientPageClass;
+import com.healthcare.retry.RetryAnalyzer;
 
 public class CaptureVitalsTestClass extends BaseClass {
 
@@ -23,7 +28,7 @@ public class CaptureVitalsTestClass extends BaseClass {
 	PatientPageClass pp;
 	CaptureVitalsPageClass cv;
 
-	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp")
+	@Test(dataProviderClass = DataProviderLogin.class, dataProvider = "dp",retryAnalyzer = RetryAnalyzer.class)
 	public void verifyAllAddVitalDetailsOfRegisteredPatient(String uname, String password) throws IOException {
 
 		lp = new LoginPageClass(driver);

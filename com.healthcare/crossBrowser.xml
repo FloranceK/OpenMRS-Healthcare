@@ -8,7 +8,7 @@
 	  <parameter name="browser" value="chrome"></parameter>
 	  
     <classes>
-		<class name="com.healthcare.executepageclasses.CaptureVitalsTestClass"/>
+		<class name="com.healthcare.executepageclasses.FindAPatientTestClass"/>
 		
       
     <!--   <class name="com.healthcare.executepageclasses.ActiveVisitsTestClass"/> 
