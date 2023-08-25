@@ -69,7 +69,7 @@ public class PatientPageClass {
 
 	public void clickOnHomeButton() {
 		explicitWait.elementToBeClickableWait(driver, homeButton);
-		generalUtilities.clickOnElement(homeButton);
+		generalUtilities.clickUsingJs(driver, homeButton);
 	}
 
 	public void clickOnStartVisitLink() {

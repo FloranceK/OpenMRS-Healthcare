@@ -4,30 +4,30 @@
   <listeners>
     <listener class-name="com.healthcare.extendreport.TestListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+  <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.healthcare.executepageclasses.CaptureVitalsTestClass">
+      <class name="com.healthcare.executepageclasses.ActiveVisitsTestClass">
         <methods>
-          <include name="verifyAllAddVitalDetailsOfRegisteredPatient" invocation-numbers="0"/>
           <include name="createExtendReport"/>
           <include name="beforeMethod"/>
+          <include name="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.healthcare.executepageclasses.CaptureVitalsTestClass -->
+      </class> <!-- com.healthcare.executepageclasses.ActiveVisitsTestClass -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
-  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+  <test thread-count="5" name="FirefoxTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.healthcare.executepageclasses.CaptureVitalsTestClass">
+      <class name="com.healthcare.executepageclasses.ActiveVisitsTestClass">
         <methods>
-          <include name="verifyAllAddVitalDetailsOfRegisteredPatient" invocation-numbers="0"/>
           <include name="createExtendReport"/>
           <include name="beforeMethod"/>
+          <include name="verifyThePatientIsInActiveVisitsWhenVisitStarts" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.healthcare.executepageclasses.CaptureVitalsTestClass -->
+      </class> <!-- com.healthcare.executepageclasses.ActiveVisitsTestClass -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [CrossBrowserTestSuite] -->

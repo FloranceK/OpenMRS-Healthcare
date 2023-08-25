@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+            <a href="#" panel-name="suite-CrossBrowserTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">CrossBrowserTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>parallel.xml</span>
+                  <a href="#" panel-name="test-xml-CrossBrowserTestSuite" class="navigator-link ">
+                    <span>crossBrowser.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-CrossBrowserTestSuite" class="navigator-link ">
                     <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                  <a href="#" panel-name="group-CrossBrowserTestSuite" class="navigator-link ">
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-CrossBrowserTestSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-CrossBrowserTestSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-CrossBrowserTestSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-CrossBrowserTestSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,45 +92,204 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">34 methods, 1 failed,  7 skipped,  26 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-CrossBrowserTestSuite" class="hide-methods failed suite-CrossBrowserTestSuite"> (hide)</a> <!-- hide-methods failed suite-CrossBrowserTestSuite -->
+                      <a href="#" panel-name="suite-CrossBrowserTestSuite" class="show-methods failed suite-CrossBrowserTestSuite"> (show)</a> <!-- show-methods failed suite-CrossBrowserTestSuite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content failed suite-CrossBrowserTestSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.healthcare.executepageclasses.HomePageTestClass" class="method navigator-link" hash-for-method="verifyAllTilesAreDisplayedInHomePage">verifyAllTilesAreDisplayedInHomePage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CrossBrowserTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CrossBrowserTestSuite" class="hide-methods skipped suite-CrossBrowserTestSuite"> (hide)</a> <!-- hide-methods skipped suite-CrossBrowserTestSuite -->
+                      <a href="#" panel-name="suite-CrossBrowserTestSuite" class="show-methods skipped suite-CrossBrowserTestSuite"> (show)</a> <!-- show-methods skipped suite-CrossBrowserTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-CrossBrowserTestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActiveVisitsWhenVisitStarts">verifyThePatientIsInActiveVisitsWhenVisitStarts</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-CrossBrowserTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-CrossBrowserTestSuite" class="hide-methods passed suite-CrossBrowserTestSuite"> (hide)</a> <!-- hide-methods passed suite-CrossBrowserTestSuite -->
+                      <a href="#" panel-name="suite-CrossBrowserTestSuite" class="show-methods passed suite-CrossBrowserTestSuite"> (show)</a> <!-- show-methods passed suite-CrossBrowserTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content passed suite-CrossBrowserTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.healthcare.executepageclasses.HomePageTestClass" class="method navigator-link" hash-for-method="verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)">verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.CaptureVitalsTestClass" class="method navigator-link" hash-for-method="verifyAllAddVitalDetailsOfRegisteredPatient(admin, Admin123)">verifyAllAddVitalDetailsOfRegisteredPatient(admin, Admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.HomePageTestClass" class="method navigator-link" hash-for-method="verifyAllTilesAreDisplayedInHomePage(admin, Admin123)">verifyAllTilesAreDisplayedInHomePage(admin, Admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.HomePageTestClass" class="method navigator-link" hash-for-method="verifyAllTilesAreDisplayedInHomePage(admin, Admin123)">verifyAllTilesAreDisplayedInHomePage(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifySuccessfulLogin(admin, Admin123)">verifySuccessfulLogin(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifySuccessfulLogin(admin, Admin123)">verifySuccessfulLogin(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyTheCorrectSiteIsLoadedWhileHittingTheURL">verifyTheCorrectSiteIsLoadedWhileHittingTheURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyTheCorrectSiteIsLoadedWhileHittingTheURL">verifyTheCorrectSiteIsLoadedWhileHittingTheURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.HomePageTestClass" class="method navigator-link" hash-for-method="verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)">verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.HomePageTestClass" class="method navigator-link" hash-for-method="verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)">verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.ActiveVisitsTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.RegisterAPatientTestClass" class="method navigator-link" hash-for-method="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.FindAPatientTestClass" class="method navigator-link" hash-for-method="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.RegisterAPatientTestClass" class="method navigator-link" hash-for-method="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.FindAPatientTestClass" class="method navigator-link" hash-for-method="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.RegisterAPatientTestClass" class="method navigator-link" hash-for-method="verifyToDeleteARegisteredPatient(admin, Admin123)">verifyToDeleteARegisteredPatient(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.RegisterAPatientTestClass" class="method navigator-link" hash-for-method="verifyToDeleteARegisteredPatient(admin, Admin123)">verifyToDeleteARegisteredPatient(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.RegisterAPatientTestClass" class="method navigator-link" hash-for-method="verifyToRegisterAPatient(admin, Admin123)">verifyToRegisterAPatient(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.RegisterAPatientTestClass" class="method navigator-link" hash-for-method="verifyToRegisterAPatient(admin, Admin123)">verifyToRegisterAPatient(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admin1, Admin123)">verifyUnsuccessfulLogin(admin1, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admin, Admin1)">verifyUnsuccessfulLogin(admin, Admin1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admin1, Admin11)">verifyUnsuccessfulLogin(admin1, Admin11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admin1, Admin123)">verifyUnsuccessfulLogin(admin1, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admin, Admin1)">verifyUnsuccessfulLogin(admin, Admin1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserTestSuite" title="com.healthcare.executepageclasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admin1, Admin11)">verifyUnsuccessfulLogin(admin1, Admin11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CrossBrowserTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -141,46 +300,8 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.healthcare.executepageclasses.HomePageTestClass</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAllTilesAreDisplayedInHomePage">
-                  </a> <!-- verifyAllTilesAreDisplayedInHomePage -->
-                  <span class="method-name">verifyAllTilesAreDisplayedInHomePage</span>
-                  <div class="stack-trace">java.lang.RuntimeException: org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelRead.getStringData(ExcelRead.java:19)
-	at com.healthcare.executepageclasses.DataProviderLogin.dp(DataProviderLogin.java:18)
-	... 19 more
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0X68736B72
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
-	... 34 more
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+        <div panel-name="suite-CrossBrowserTestSuite" class="panel CrossBrowserTestSuite">
+          <div class="suite-CrossBrowserTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
               <span class="class-name">com.healthcare.executepageclasses.ActiveVisitsTestClass</span>
@@ -188,46 +309,438 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X68736B72
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyThePatientIsInActiveVisitsWhenVisitStarts">
-                  </a> <!-- verifyThePatientIsInActiveVisitsWhenVisitStarts -->
+                  <a name="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123) -->
                   <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.io.IOException: Stream Closed
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.healthcare.pageclasses.HomePageClass.clickOnActiveVisitsTile(HomePageClass.java:58)
+	at com.healthcare.executepageclasses.ActiveVisitsTestClass.verifyThePatientIsInActiveVisitsWhenVisitStarts(ActiveVisitsTestClass.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.io.IOException: Stream Closed
-	at java.base/java.io.FileInputStream.available0(Native Method)
-	at java.base/java.io.FileInputStream.available(FileInputStream.java:330)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:359)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
-	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:183)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.realSkip(ZipArchiveInputStream.java:1194)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.skipRemainderOfArchive(ZipArchiveInputStream.java:1126)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:293)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelRead.getStringData(ExcelRead.java:19)
-	at com.healthcare.executepageclasses.DataProviderLogin.dp(DataProviderLogin.java:18)
-	... 19 more
-... Removed 22 stack frames
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [06853dbf-0214-4101-8912-d7aed6d875f8, findElement {using=xpath, value=//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:20331, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.4.0, moz:processID: 51899, moz:profile: /var/folders/vp/snvd374s0xv..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:20331/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 06853dbf-0214-4101-8912-d7aed6d875f8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-CrossBrowserTestSuite-class-failed -->
+          <div class="suite-CrossBrowserTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.healthcare.executepageclasses.ActiveVisitsTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.healthcare.pageclasses.HomePageClass.clickOnActiveVisitsTile(HomePageClass.java:58)
+	at com.healthcare.executepageclasses.ActiveVisitsTestClass.verifyThePatientIsInActiveVisitsWhenVisitStarts(ActiveVisitsTestClass.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fcdaa232-6509-4099-ab5b-7535d2da620e, findElement {using=xpath, value=//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:9704, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.4.0, moz:processID: 51651, moz:profile: /var/folders/vp/snvd374s0xv..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:9704/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fcdaa232-6509-4099-ab5b-7535d2da620e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.healthcare.pageclasses.HomePageClass.clickOnActiveVisitsTile(HomePageClass.java:58)
+	at com.healthcare.executepageclasses.ActiveVisitsTestClass.verifyThePatientIsInActiveVisitsWhenVisitStarts(ActiveVisitsTestClass.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [11f1b5f3-8e81-4908-a10f-c73a552b34f9, findElement {using=xpath, value=//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:35936, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.4.0, moz:processID: 51770, moz:profile: /var/folders/vp/snvd374s0xv..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:35936/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 11f1b5f3-8e81-4908-a10f-c73a552b34f9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.healthcare.pageclasses.HomePageClass.clickOnActiveVisitsTile(HomePageClass.java:58)
+	at com.healthcare.executepageclasses.ActiveVisitsTestClass.verifyThePatientIsInActiveVisitsWhenVisitStarts(ActiveVisitsTestClass.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [86282296-62ee-4884-bee1-214d11dd9126, findElement {using=xpath, value=//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:40989, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.4.0, moz:processID: 51570, moz:profile: /var/folders/vp/snvd374s0xv..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:40989/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 86282296-62ee-4884-bee1-214d11dd9126
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.healthcare.pageclasses.HomePageClass.clickOnActiveVisitsTile(HomePageClass.java:58)
+	at com.healthcare.executepageclasses.ActiveVisitsTestClass.verifyThePatientIsInActiveVisitsWhenVisitStarts(ActiveVisitsTestClass.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [46243dc9-57ca-4008-8f6e-e802c8dda927, findElement {using=xpath, value=//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:32126, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.4.0, moz:processID: 51846, moz:profile: /var/folders/vp/snvd374s0xv..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:32126/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46243dc9-57ca-4008-8f6e-e802c8dda927
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.healthcare.pageclasses.HomePageClass.clickOnActiveVisitsTile(HomePageClass.java:58)
+	at com.healthcare.executepageclasses.ActiveVisitsTestClass.verifyThePatientIsInActiveVisitsWhenVisitStarts(ActiveVisitsTestClass.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5c087fd5-5d5f-440a-b29d-e6d539ccd3ec, findElement {using=xpath, value=//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:48858, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 22.4.0, moz:processID: 51702, moz:profile: /var/folders/vp/snvd374s0xv..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:48858/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5c087fd5-5d5f-440a-b29d-e6d539ccd3ec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.healthcare.pageclasses.HomePageClass.clickOnActiveVisitsTile(HomePageClass.java:58)
+	at com.healthcare.executepageclasses.ActiveVisitsTestClass.verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(ActiveVisitsTestClass.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&quot;}
+  (Session info: chrome=116.0.5845.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [579ee6605fc6bba5ab169e88f48d5600, findElement {using=xpath, value=//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/vp/snvd374s0xv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62179}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62179/devtoo..., se:cdpVersion: 116.0.5845.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 579ee6605fc6bba5ab169e88f48d5600
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.healthcare.pageclasses.HomePageClass.clickOnActiveVisitsTile(HomePageClass.java:58)
+	at com.healthcare.executepageclasses.ActiveVisitsTestClass.verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(ActiveVisitsTestClass.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]&quot;}
+  (Session info: chrome=116.0.5845.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ebcea39e8546a756aa40b64e3668844, findElement {using=xpath, value=//a[contains(@href,&apos;/openmrs/coreapps/activeVisits.page&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/vp/snvd374s0xv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62369}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62369/devtoo..., se:cdpVersion: 116.0.5845.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ebcea39e8546a756aa40b64e3668844
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserTestSuite-class-skipped -->
+          <div class="suite-CrossBrowserTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.healthcare.executepageclasses.FindAPatientTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)">
+                  </a> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123) -->
+                  <span class="method-name">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)">
+                  </a> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123) -->
+                  <span class="method-name">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserTestSuite-class-passed -->
+          <div class="suite-CrossBrowserTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.healthcare.executepageclasses.HomePageTestClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllTilesAreDisplayedInHomePage(admin, Admin123)">
+                  </a> <!-- verifyAllTilesAreDisplayedInHomePage(admin, Admin123) -->
+                  <span class="method-name">verifyAllTilesAreDisplayedInHomePage</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllTilesAreDisplayedInHomePage(admin, Admin123)">
+                  </a> <!-- verifyAllTilesAreDisplayedInHomePage(admin, Admin123) -->
+                  <span class="method-name">verifyAllTilesAreDisplayedInHomePage</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)">
+                  </a> <!-- verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123) -->
+                  <span class="method-name">verifyTheLogoIsDisplayedOrNotInHomePage</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)">
@@ -237,13 +750,187 @@ Caused by: java.io.IOException: Stream Closed
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-CrossBrowserTestSuite-class-passed -->
+          <div class="suite-CrossBrowserTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.healthcare.executepageclasses.CaptureVitalsTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllAddVitalDetailsOfRegisteredPatient(admin, Admin123)">
+                  </a> <!-- verifyAllAddVitalDetailsOfRegisteredPatient(admin, Admin123) -->
+                  <span class="method-name">verifyAllAddVitalDetailsOfRegisteredPatient</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserTestSuite-class-passed -->
+          <div class="suite-CrossBrowserTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.healthcare.executepageclasses.RegisterAPatientTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)">
+                  </a> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123) -->
+                  <span class="method-name">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)">
+                  </a> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123) -->
+                  <span class="method-name">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyToDeleteARegisteredPatient(admin, Admin123)">
+                  </a> <!-- verifyToDeleteARegisteredPatient(admin, Admin123) -->
+                  <span class="method-name">verifyToDeleteARegisteredPatient</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyToDeleteARegisteredPatient(admin, Admin123)">
+                  </a> <!-- verifyToDeleteARegisteredPatient(admin, Admin123) -->
+                  <span class="method-name">verifyToDeleteARegisteredPatient</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyToRegisterAPatient(admin, Admin123)">
+                  </a> <!-- verifyToRegisterAPatient(admin, Admin123) -->
+                  <span class="method-name">verifyToRegisterAPatient</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyToRegisterAPatient(admin, Admin123)">
+                  </a> <!-- verifyToRegisterAPatient(admin, Admin123) -->
+                  <span class="method-name">verifyToRegisterAPatient</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserTestSuite-class-passed -->
+          <div class="suite-CrossBrowserTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.healthcare.executepageclasses.LoginPageTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfulLogin(admin, Admin123)">
+                  </a> <!-- verifySuccessfulLogin(admin, Admin123) -->
+                  <span class="method-name">verifySuccessfulLogin</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfulLogin(admin, Admin123)">
+                  </a> <!-- verifySuccessfulLogin(admin, Admin123) -->
+                  <span class="method-name">verifySuccessfulLogin</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheCorrectSiteIsLoadedWhileHittingTheURL">
+                  </a> <!-- verifyTheCorrectSiteIsLoadedWhileHittingTheURL -->
+                  <span class="method-name">verifyTheCorrectSiteIsLoadedWhileHittingTheURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheCorrectSiteIsLoadedWhileHittingTheURL">
+                  </a> <!-- verifyTheCorrectSiteIsLoadedWhileHittingTheURL -->
+                  <span class="method-name">verifyTheCorrectSiteIsLoadedWhileHittingTheURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnsuccessfulLogin(admin1, Admin123)">
+                  </a> <!-- verifyUnsuccessfulLogin(admin1, Admin123) -->
+                  <span class="method-name">verifyUnsuccessfulLogin</span>
+                  <span class="parameters">(admin1,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnsuccessfulLogin(admin, Admin1)">
+                  </a> <!-- verifyUnsuccessfulLogin(admin, Admin1) -->
+                  <span class="method-name">verifyUnsuccessfulLogin</span>
+                  <span class="parameters">(admin,Admin1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnsuccessfulLogin(admin1, Admin11)">
+                  </a> <!-- verifyUnsuccessfulLogin(admin1, Admin11) -->
+                  <span class="method-name">verifyUnsuccessfulLogin</span>
+                  <span class="parameters">(admin1,Admin11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnsuccessfulLogin(admin1, Admin123)">
+                  </a> <!-- verifyUnsuccessfulLogin(admin1, Admin123) -->
+                  <span class="method-name">verifyUnsuccessfulLogin</span>
+                  <span class="parameters">(admin1,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnsuccessfulLogin(admin, Admin1)">
+                  </a> <!-- verifyUnsuccessfulLogin(admin, Admin1) -->
+                  <span class="method-name">verifyUnsuccessfulLogin</span>
+                  <span class="parameters">(admin,Admin1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnsuccessfulLogin(admin1, Admin11)">
+                  </a> <!-- verifyUnsuccessfulLogin(admin1, Admin11) -->
+                  <span class="method-name">verifyUnsuccessfulLogin</span>
+                  <span class="parameters">(admin1,Admin11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserTestSuite-class-passed -->
+          <div class="suite-CrossBrowserTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.healthcare.executepageclasses.ActiveVisitsTestClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)">
@@ -253,164 +940,767 @@ Caused by: java.io.IOException: Stream Closed
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-CrossBrowserTestSuite-class-passed -->
+        </div> <!-- panel CrossBrowserTestSuite -->
+        <div panel-name="test-xml-CrossBrowserTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/smathew/eclipse-workspace/OpenMRS-Healthcare/com.healthcare/parallel.xml</span>
+            <span class="header-content">/Users/smathew/eclipse-workspace/OpenMRS-Healthcare/com.healthcare/crossBrowser.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test1&quot;&gt;
+&lt;suite name=&quot;CrossBrowserTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.healthcare.extendreport.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.FindAPatientTestClass&quot;/&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.ActiveVisitsTestClass&quot;/&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.FindAPatientTestClass&quot;/&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.RegisterAPatientTestClass&quot;/&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.LoginPageTestClass&quot;/&gt;
       &lt;class name=&quot;com.healthcare.executepageclasses.HomePageTestClass&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test1 --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.CaptureVitalsTestClass&quot;/&gt;
       &lt;class name=&quot;com.healthcare.executepageclasses.ActiveVisitsTestClass&quot;/&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.FindAPatientTestClass&quot;/&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.RegisterAPatientTestClass&quot;/&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.LoginPageTestClass&quot;/&gt;
+      &lt;class name=&quot;com.healthcare.executepageclasses.HomePageTestClass&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+&lt;/suite&gt; &lt;!-- CrossBrowserTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-CrossBrowserTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for CrossBrowserTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (1 class)</span>
+                <span class="test-name">ChromeTest (6 classes)</span>
               </li>
               <li>
-                <span class="test-name">Test2 (1 class)</span>
+                <span class="test-name">FirefoxTest (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-CrossBrowserTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for CrossBrowserTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
               <span class="test-group-name">group1</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">verifyTheCorrectSiteIsLoadedWhileHittingTheURL</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">verifyTheLogoIsDisplayedOrNotInHomePage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">group2</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySuccessfulLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUnsuccessfulLogin</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-CrossBrowserTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for CrossBrowserTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_CrossBrowserTestSuite');
+function tableData_CrossBrowserTestSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(34);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted')
+data.setCell(0, 1, 'verifyThePatientIsInActiveVisitsWhenVisitStarts')
 data.setCell(0, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
-data.setCell(0, 3, 13859);
+data.setCell(0, 3, 36534);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyTheLogoIsDisplayedOrNotInHomePage')
-data.setCell(1, 2, 'com.healthcare.executepageclasses.HomePageTestClass')
-data.setCell(1, 3, 1724);
+data.setCell(1, 1, 'verifyThePatientIsInActiveVisitsWhenVisitStarts')
+data.setCell(1, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
+data.setCell(1, 3, 35610);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAllTilesAreDisplayedInHomePage')
-data.setCell(2, 2, 'com.healthcare.executepageclasses.HomePageTestClass')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'verifyThePatientIsInActiveVisitsWhenVisitStarts')
+data.setCell(2, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
+data.setCell(2, 3, 35167);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyThePatientIsInActiveVisitsWhenVisitStarts')
 data.setCell(3, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
-data.setCell(3, 3, 0);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(3, 3, 34994);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyThePatientIsInActiveVisitsWhenVisitStarts')
+data.setCell(4, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
+data.setCell(4, 3, 34918);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyThePatientIsInActiveVisitsWhenVisitStarts')
+data.setCell(5, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
+data.setCell(5, 3, 33955);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted')
+data.setCell(6, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
+data.setCell(6, 3, 32744);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted')
+data.setCell(7, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
+data.setCell(7, 3, 32588);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAllAddVitalDetailsOfRegisteredPatient')
+data.setCell(8, 2, 'com.healthcare.executepageclasses.CaptureVitalsTestClass')
+data.setCell(8, 3, 30219);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable')
+data.setCell(9, 2, 'com.healthcare.executepageclasses.RegisterAPatientTestClass')
+data.setCell(9, 3, 19084);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyToDeleteARegisteredPatient')
+data.setCell(10, 2, 'com.healthcare.executepageclasses.RegisterAPatientTestClass')
+data.setCell(10, 3, 17942);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyToDeleteARegisteredPatient')
+data.setCell(11, 2, 'com.healthcare.executepageclasses.RegisterAPatientTestClass')
+data.setCell(11, 3, 15881);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyThePatientIsInActiveVisitsWhenVisitStarts')
+data.setCell(12, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
+data.setCell(12, 3, 15745);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable')
+data.setCell(13, 2, 'com.healthcare.executepageclasses.FindAPatientTestClass')
+data.setCell(13, 3, 14728);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable')
+data.setCell(14, 2, 'com.healthcare.executepageclasses.RegisterAPatientTestClass')
+data.setCell(14, 3, 13979);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyToRegisterAPatient')
+data.setCell(15, 2, 'com.healthcare.executepageclasses.RegisterAPatientTestClass')
+data.setCell(15, 3, 13964);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable')
+data.setCell(16, 2, 'com.healthcare.executepageclasses.FindAPatientTestClass')
+data.setCell(16, 3, 13262);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyToRegisterAPatient')
+data.setCell(17, 2, 'com.healthcare.executepageclasses.RegisterAPatientTestClass')
+data.setCell(17, 3, 12869);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted')
+data.setCell(18, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
+data.setCell(18, 3, 12585);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted')
+data.setCell(19, 2, 'com.healthcare.executepageclasses.ActiveVisitsTestClass')
+data.setCell(19, 3, 9499);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifySuccessfulLogin')
+data.setCell(20, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(20, 3, 2681);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyAllTilesAreDisplayedInHomePage')
+data.setCell(21, 2, 'com.healthcare.executepageclasses.HomePageTestClass')
+data.setCell(21, 3, 2656);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyTheLogoIsDisplayedOrNotInHomePage')
+data.setCell(22, 2, 'com.healthcare.executepageclasses.HomePageTestClass')
+data.setCell(22, 3, 2650);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyTheLogoIsDisplayedOrNotInHomePage')
+data.setCell(23, 2, 'com.healthcare.executepageclasses.HomePageTestClass')
+data.setCell(23, 3, 2622);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyAllTilesAreDisplayedInHomePage')
+data.setCell(24, 2, 'com.healthcare.executepageclasses.HomePageTestClass')
+data.setCell(24, 3, 2115);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifySuccessfulLogin')
+data.setCell(25, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(25, 3, 2007);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyUnsuccessfulLogin')
+data.setCell(26, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(26, 3, 1711);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyUnsuccessfulLogin')
+data.setCell(27, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(27, 3, 1659);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyUnsuccessfulLogin')
+data.setCell(28, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(28, 3, 1467);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyUnsuccessfulLogin')
+data.setCell(29, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(29, 3, 1414);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyUnsuccessfulLogin')
+data.setCell(30, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(30, 3, 1217);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyUnsuccessfulLogin')
+data.setCell(31, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(31, 3, 1136);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyTheCorrectSiteIsLoadedWhileHittingTheURL')
+data.setCell(32, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(32, 3, 16);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyTheCorrectSiteIsLoadedWhileHittingTheURL')
+data.setCell(33, 2, 'com.healthcare.executepageclasses.LoginPageTestClass')
+data.setCell(33, 3, 10);
+window.suiteTableData['CrossBrowserTestSuite']= { tableData: data, tableDiv: 'times-div-CrossBrowserTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-CrossBrowserTestSuite">
+              </div> <!-- times-div-CrossBrowserTestSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-CrossBrowserTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for CrossBrowserTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-CrossBrowserTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">9 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.healthcare.executepageclasses.FindAPatientTestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createExtendReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.healthcare.executepageclasses.HomePageTestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createExtendReport</span>
+                <br/>
+                <span class="ignored-method-name">createExtendReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.healthcare.executepageclasses.RegisterAPatientTestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createExtendReport</span>
+                <br/>
+                <span class="ignored-method-name">createExtendReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.healthcare.executepageclasses.LoginPageTestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createExtendReport</span>
+                <br/>
+                <span class="ignored-method-name">createExtendReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.healthcare.executepageclasses.ActiveVisitsTestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createExtendReport</span>
+                <br/>
+                <span class="ignored-method-name">createExtendReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-CrossBrowserTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.healthcare.executepageclasses.ActiveVisitsTestClass</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.healthcare.executepageclasses.CaptureVitalsTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">createExtendReport(org.testng.TestRunner@4bc28c33)</span>
+                <span class="method-name">createExtendReport(org.testng.TestRunner@5c58cf11)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.healthcare.executepageclasses.FindAPatientTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">535 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">374 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)</span>
+                <span class="method-start">4971 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=SUCCESS method=Fi...)</span>
+                <span class="method-start">19703 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.healthcare.executepageclasses.ActiveVisitsTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">19836 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</span>
+                <span class="method-start">23823 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActiveVisitsWhenVisitStarts status=SUCCESS method=ActiveVisitsT...)</span>
+                <span class="method-start">39569 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">39694 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</span>
+                <span class="method-start">43734 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted status=SKIP method=...)</span>
+                <span class="method-start">76332 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">76453 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</span>
+                <span class="method-start">80866 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted status=SKIP method=...)</span>
+                <span class="method-start">113614 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">113733 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</span>
+                <span class="method-start">118052 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted status=SUCCESS meth...)</span>
+                <span class="method-start">127552 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.healthcare.executepageclasses.RegisterAPatientTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">127666 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyToRegisterAPatient(admin, Admin123)</span>
+                <span class="method-start">131987 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyToRegisterAPatient status=SUCCESS method=RegisterAPatientTestClass.verifyToRe...)</span>
+                <span class="method-start">144857 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">144991 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyToDeleteARegisteredPatient(admin, Admin123)</span>
+                <span class="method-start">149018 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyToDeleteARegisteredPatient status=SUCCESS method=RegisterAPatientTestClass.ve...)</span>
+                <span class="method-start">164900 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">165018 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)</span>
+                <span class="method-start">169009 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=SUCCESS method=Re...)</span>
+                <span class="method-start">188094 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.healthcare.executepageclasses.LoginPageTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">188209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySuccessfulLogin(admin, Admin123)</span>
+                <span class="method-start">192293 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifySuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifySuccessfulLogi...)</span>
+                <span class="method-start">194300 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">194411 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheCorrectSiteIsLoadedWhileHittingTheURL</span>
+                <span class="method-start">199632 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheCorrectSiteIsLoadedWhileHittingTheURL status=SUCCESS method=LoginPageTestC...)</span>
+                <span class="method-start">199648 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">199777 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnsuccessfulLogin(admin, Admin1)</span>
+                <span class="method-start">204132 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUnsuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnsuccessful...)</span>
+                <span class="method-start">205547 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">205652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnsuccessfulLogin(admin1, Admin123)</span>
+                <span class="method-start">210774 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUnsuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnsuccessful...)</span>
+                <span class="method-start">211911 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">212017 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnsuccessfulLogin(admin1, Admin11)</span>
+                <span class="method-start">216841 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUnsuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnsuccessful...)</span>
+                <span class="method-start">218552 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.healthcare.executepageclasses.HomePageTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">536 ms</span>
+                <span class="method-start">218669 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAllTilesAreDisplayedInHomePage(admin, Admin123)</span>
+                <span class="method-start">224218 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyAllTilesAreDisplayedInHomePage status=SUCCESS method=HomePageTestClass.verify...)</span>
+                <span class="method-start">226333 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">226449 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)</span>
-                <span class="method-start">5611 ms</span>
+                <span class="method-start">232794 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.healthcare.executepageclasses.ActiveVisitsTestClass</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</span>
-                <span class="method-start">6920 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.healthcare.executepageclasses.HomePageTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyTheLogoIsDisplayedOrNotInHomePage status=SUCCESS method=HomePageTestClass.ver...)</span>
-                <span class="method-start">7337 ms</span>
+                <span class="method-start">235445 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.healthcare.executepageclasses.CaptureVitalsTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">235903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAllAddVitalDetailsOfRegisteredPatient(admin, Admin123)</span>
+                <span class="method-start">242969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyAllAddVitalDetailsOfRegisteredPatient status=SUCCESS method=CaptureVitalsTest...)</span>
+                <span class="method-start">273188 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.healthcare.executepageclasses.ActiveVisitsTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">273738 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</span>
+                <span class="method-start">280440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActiveVisitsWhenVisitStarts status=SKIP method=ActiveVisitsTest...)</span>
+                <span class="method-start">316977 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">317429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</span>
+                <span class="method-start">323086 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActiveVisitsWhenVisitStarts status=SKIP method=ActiveVisitsTest...)</span>
+                <span class="method-start">357044 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">357573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</span>
+                <span class="method-start">363502 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActiveVisitsWhenVisitStarts status=SKIP method=ActiveVisitsTest...)</span>
+                <span class="method-start">398672 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">399120 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</span>
+                <span class="method-start">405690 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActiveVisitsWhenVisitStarts status=SKIP method=ActiveVisitsTest...)</span>
+                <span class="method-start">440610 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">441201 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</span>
+                <span class="method-start">447168 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActiveVisitsWhenVisitStarts status=SKIP method=ActiveVisitsTest...)</span>
+                <span class="method-start">482780 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">483313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThePatientIsInActiveVisitsWhenVisitStarts(admin, Admin123)</span>
+                <span class="method-start">489260 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActiveVisitsWhenVisitStarts status=FAILURE method=ActiveVisitsT...)</span>
+                <span class="method-start">524256 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">524764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted(admin, Admin123)</span>
+                <span class="method-start">530639 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyThePatientIsNotDisplayedInActiveVisitsWhenVisitNotStarted status=SUCCESS meth...)</span>
-                <span class="method-start">20780 ms</span>
+                <span class="method-start">543225 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.healthcare.executepageclasses.FindAPatientTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">543643 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)</span>
+                <span class="method-start">549756 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=SUCCESS method=Fi...)</span>
+                <span class="method-start">563018 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.healthcare.executepageclasses.RegisterAPatientTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">563449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyToRegisterAPatient(admin, Admin123)</span>
+                <span class="method-start">569347 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyToRegisterAPatient status=SUCCESS method=RegisterAPatientTestClass.verifyToRe...)</span>
+                <span class="method-start">583311 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">583746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyToDeleteARegisteredPatient(admin, Admin123)</span>
+                <span class="method-start">590218 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyToDeleteARegisteredPatient status=SUCCESS method=RegisterAPatientTestClass.ve...)</span>
+                <span class="method-start">608160 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">608595 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(admin, Admin123)</span>
+                <span class="method-start">614472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable status=SUCCESS method=Re...)</span>
+                <span class="method-start">628452 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.healthcare.executepageclasses.LoginPageTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">628878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySuccessfulLogin(admin, Admin123)</span>
+                <span class="method-start">635292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifySuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifySuccessfulLogi...)</span>
+                <span class="method-start">637973 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">638397 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheCorrectSiteIsLoadedWhileHittingTheURL</span>
+                <span class="method-start">644276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheCorrectSiteIsLoadedWhileHittingTheURL status=SUCCESS method=LoginPageTestC...)</span>
+                <span class="method-start">644287 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">644730 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnsuccessfulLogin(admin, Admin1)</span>
+                <span class="method-start">650642 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUnsuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnsuccessful...)</span>
+                <span class="method-start">652110 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">652546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnsuccessfulLogin(admin1, Admin123)</span>
+                <span class="method-start">658509 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUnsuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnsuccessful...)</span>
+                <span class="method-start">659726 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">660152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnsuccessfulLogin(admin1, Admin11)</span>
+                <span class="method-start">666117 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUnsuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnsuccessful...)</span>
+                <span class="method-start">667777 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.healthcare.executepageclasses.HomePageTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">668209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAllTilesAreDisplayedInHomePage(admin, Admin123)</span>
+                <span class="method-start">674343 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyAllTilesAreDisplayedInHomePage status=SUCCESS method=HomePageTestClass.verify...)</span>
+                <span class="method-start">677000 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">677421 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheLogoIsDisplayedOrNotInHomePage(admin, Admin123)</span>
+                <span class="method-start">683317 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheLogoIsDisplayedOrNotInHomePage status=SUCCESS method=HomePageTestClass.ver...)</span>
+                <span class="method-start">685940 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

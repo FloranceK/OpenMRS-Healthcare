@@ -8,7 +8,7 @@
 	<test thread-count="5" name="ChromeTest">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.healthcare.executepageclasses.HomePageTestClass" />
+			<class name="com.healthcare.executepageclasses.ActiveVisitsTestClass" />
 			
 		<!-- 	<class
 				name="com.healthcare.executepageclasses.CaptureVitalsTestClass" />
@@ -25,3 +25,4 @@
 	Test -->
 </suite> <!--
 SuiteforChrome -->
+

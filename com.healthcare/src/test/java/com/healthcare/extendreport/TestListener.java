@@ -35,7 +35,7 @@ public class TestListener extends BaseClass implements ITestListener {
 		System.out.println((result.getMethod().getMethodName() + " passed!"));
 		test.get().pass("Test passed");
 	}
-	
+	 
 	public synchronized void onTestFailure(ITestResult result) {
         System.out.println((result.getMethod().getMethodName() + " failed!"));
         test.get().fail(result.getThrowable());

@@ -4,35 +4,35 @@
 	<listeners>
 		<listener class-name="com.healthcare.extendreport.TestListener"></listener>
 	</listeners>
-  <test thread-count="5" name="ChromeTest" parallel="tests">
+  <test name="ChromeTest" >
 	  <parameter name="browser" value="chrome"></parameter>
 	  
     <classes>
 		<class name="com.healthcare.executepageclasses.FindAPatientTestClass"/>
 		
       
-    <!--   <class name="com.healthcare.executepageclasses.ActiveVisitsTestClass"/> 
+     <class name="com.healthcare.executepageclasses.ActiveVisitsTestClass"/> 
       <class name="com.healthcare.executepageclasses.FindAPatientTestClass"/>
       <class name="com.healthcare.executepageclasses.RegisterAPatientTestClass"/>
       <class name="com.healthcare.executepageclasses.LoginPageTestClass"/>
-      <class name="com.healthcare.executepageclasses.HomePageTestClass"/>  -->
+      <class name="com.healthcare.executepageclasses.HomePageTestClass"/> 
     </classes>
-  </test> <!-- Test -->
+  </test> 
 
-  <test thread-count="5" name="FirefoxTest" parallel="tests">
+  <test name="FirefoxTest" >
 	  <parameter name="browser" value="firefox"></parameter>
 	  
     <classes>
 		<class name="com.healthcare.executepageclasses.CaptureVitalsTestClass"/>
 	 
       
-     <!--    <class name="com.healthcare.executepageclasses.ActiveVisitsTestClass"/> 
+         <class name="com.healthcare.executepageclasses.ActiveVisitsTestClass"/> 
       <class name="com.healthcare.executepageclasses.FindAPatientTestClass"/>
       <class name="com.healthcare.executepageclasses.RegisterAPatientTestClass"/>
       <class name="com.healthcare.executepageclasses.LoginPageTestClass"/>
-      <class name="com.healthcare.executepageclasses.HomePageTestClass"/>  -->
+      <class name="com.healthcare.executepageclasses.HomePageTestClass"/> 
     </classes>
-  </test> <!-- Test -->
+  </test> 
   
   
 </suite> <!-- Suite -->

@@ -49,7 +49,7 @@ public class BaseClass {
 			WebDriverManager.safaridriver().setup();
 			driver = new SafariDriver();
 		}
-		
+		 
 
 		driver.get(property.getProperty("url"));  // to retrieve the url mentioned from config.properies file.
 		driver.manage().window().maximize();
@@ -61,7 +61,7 @@ public class BaseClass {
 		// ITestResult describes the result of a test
 
 		if (itr.getStatus() == ITestResult.FAILURE) { // test execution status ie, PASS, FAIL, SKIP etc
-			sc = new ScreenshotClass(); // screenshots are taken only when test result is FAIL
+			sc = new ScreenshotClass(); // screenshots are taken only when test result is FAIL 
 			sc.takeScreenshot(driver, itr.getName());
 		}  
 		driver.quit();
